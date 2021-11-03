@@ -30,6 +30,7 @@ public class StringsAndThings {
         }
         return count;
     }
+
     /**
      * Given two strings, base and remove, return a version of the base string where all instances of the remove string have
      * been removed (not case sensitive). You may assume that the remove string is length 1 or more.
@@ -89,13 +90,13 @@ public class StringsAndThings {
          *            countTriple("xxxabyyyycd") // Should return 3
          *            countTriple("a") // Should return 0
          */
-        public Integer countTriple (String input){
+        public Integer countTriple (String input) {
             // Setup counter to count result
             int counter = 0;
             // Setup char variable
             char c = 0;
             // Setup for loop to iterate through characters
-            for (int i = 0; i < input.length()-1; i++) {
+            for (int i = 0; i < input.length() - 1; i++) {
                 // Find characters
                 c = input.charAt(i);
                 System.out.println(c);
@@ -106,6 +107,4 @@ public class StringsAndThings {
             }
             return counter;
         }
-    }
-
-
+}
