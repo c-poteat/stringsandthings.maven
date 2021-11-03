@@ -15,7 +15,19 @@ public class StringsAndThings {
      *           countYZ("day fyyyz"); // Should return 2
      */
     public Integer countYZ(String input){
-        return null;
+        //Count the letters need counter variable
+        int count = 0;
+        // Split word in two
+        String[] parts = input.split(" ");
+        // Place in a loop to iterate the characters
+        for (int i = 0; i < parts.length; i++) {
+            // Check to see if words ends with y or z
+            if (parts[i].trim().endsWith("y") || parts[i].trim().endsWith("z")) {
+                count++;
+            }
+
+        }
+        return count;
     }
 
     /**
@@ -27,10 +39,9 @@ public class StringsAndThings {
      *           removeString("Hello there", "e") //  Should return "Hllo thr"
      *           removeString("Hello there", "x") // Should return "Hello there"
      */
-    public String removeString(String base, String remove){
-        return null;
+    public String removeString(String base, String remove) {
+    return null;
     }
-
     /**
      * Given a string, return true if the number of appearances of "is" anywhere in the string is equal
      * to the number of appearances of "not" anywhere in the string (case sensitive)
@@ -39,8 +50,14 @@ public class StringsAndThings {
      *           containsEqualNumberOfIsAndNot("This is notnot") // Should return true
      *           containsEqualNumberOfIsAndNot("noisxxnotyynotxisi") // Should return true
      */
-    public Boolean containsEqualNumberOfIsAndNot(String input){
-        return null;
+    public Boolean containsEqualNumberOfIsAndNot(String input) {
+        int one = (input.split("is", -1).length) - 1;
+        int two = (input.split("not", -1).length) - 1;
+        if (one == two) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
